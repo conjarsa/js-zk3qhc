@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+body *:not(div) {
+  padding: 10px;
+}
+
+aside {
+  background-color: red;
+  width: 150px;
+}
+div {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+main {
+  background-color: green;
+  flex: 1 1 auto;
+  /* Grow, shrink automatically*/
+  overflow: auto;
+}
+
+header,
+footer,
+aside,
+main {
+  padding: 10px;
+  color: white;
+}
+
+header,
+footer {
+  background-color: blue;
+}
